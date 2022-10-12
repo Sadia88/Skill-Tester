@@ -7,11 +7,17 @@ const Home = () => {
     const topicsdata=useLoaderData()
    const  topics=topicsdata.data
     return (
-        <div className='topics'>
+        <div>
+            <h1 className='heading'>
+                Exlpore Your Web Devlopement Skill
+            </h1>
+            <div className='topics'>
+            
             {
                 topics.map(topic=><Topics key={topic.id} topic={topic}></Topics>)
             }
             
+        </div>
         </div>
     );
 };
