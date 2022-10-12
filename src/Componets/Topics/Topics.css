@@ -1,0 +1,17 @@
+.topic-container{
+    display: flex;
+    margin: 100px auto;
+    border: 1px solid green;
+    border-radius: 30px;
+    padding: 30px;
+}
+.topic img{
+height: 200px;
+width: 200px;
+border-radius: 30%;
+}
+.topic-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
