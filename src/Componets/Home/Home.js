@@ -6,6 +6,7 @@ import './Home.css'
 const Home = () => {
     const topicsdata=useLoaderData()
    const  topics=topicsdata.data
+   console.log('topics',topics)
     return (
         <div>
             <h1 className='heading'>

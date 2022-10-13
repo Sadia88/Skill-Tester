@@ -6,6 +6,8 @@ import Main from './Layouts/Main';
 import Home from './Componets/Home/Home';
 import Statistics from './Componets/Statistics/Statistics';
 import Blog from './Componets/Blog/Blog';
+import Quiz from './Componets/Quiz/Quiz';
+
 
 function App() {
 
@@ -31,6 +33,20 @@ function App() {
           path:'/blog',
           element: <Blog></Blog>
         }
+        ,
+        {
+          path: "/quiz/:id",    
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          
+          },
+          element: <Quiz></Quiz>
+        },
+        {
+          path:'*',
+          element: <div>This Route not found</div>
+        }
+
       ]
     }
   ])
