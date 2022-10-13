@@ -3,7 +3,7 @@ import './Topics.css'
 import { faTrash, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { handleQuiz } from '../Loaders/quizLoader.js';
+
 
 
 const Topics = ({topic}) => {

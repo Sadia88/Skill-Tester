@@ -3,7 +3,7 @@
     border: 1px solid green;
     margin: 20px 90px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
 
     padding-left: 70px;
 }
@@ -25,15 +25,17 @@ align-content: center;
    padding: 10px;
    font-weight: bold;
 }
-.bg-salmon {
-    background-color: salmon;
-    color: white;
-  }
+.icon{
+    margin-left: 100px;
+}
 @media only screen and (max-width: 700px) {
     .question {
         grid-template-columns: 1fr;
         padding-bottom: 10px;
         padding-left: 20px;
       
+    }
+    .icon{
+        margin-left: 10px;
     }
 }

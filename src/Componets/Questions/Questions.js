@@ -57,7 +57,7 @@ const [isActive, setIsActive] = useState(false);
               )
 }</p>
             </div>
-<div>
+<div  className='icon'>
 <FontAwesomeIcon  icon={faEye} className={isActive ? 'hidden' : 'not-hidden'}  onClick={handleClick}></FontAwesomeIcon> 
 
 <button className={isActive ? 'not-hidden' : 'hidden'} onClick={handleClick} > <small >{correctAnswer}</small></button>
