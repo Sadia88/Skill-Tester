@@ -8,25 +8,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Questions = ({questions}) => {
 
-    const [isActiveRadio, setIsActiveRadio] = useState(false);
+    
 
     
 const {options,id,question,correctAnswer}=questions
-const [count,setCount]=useState(1)
+const [count,setCount]=useState(0)
 const notifyCorrect = () => toast("Wow! Correct Answer");
 const notifyIncorrect = () => toast("Alas! Wrong Answer");
 // console.log(options)
 const handleChange =(event) => {
     
 if(event===correctAnswer){
-    setIsActiveRadio(current => !current);
 notifyCorrect() 
 setCount(count+1)  
     
 }
 else{
     notifyIncorrect()
-    
+    setCount(count)
     
     
 }
@@ -42,7 +41,7 @@ const [isActive, setIsActive] = useState(false);
   }
     return (
         <div>
-           <h1>correct answer is {count}</h1>
+           <h1>Total correct answer is {count}</h1>
             <div className='question'>
             
             <div>
@@ -51,7 +50,7 @@ const [isActive, setIsActive] = useState(false);
 
           <p>{options.map(option=>
               <div className='check-box'><label>
-              <input type="radio" name='option'  className={isActiveRadio? 'bg-salmon' : ''}  onChange={()=>handleChange(option)}/>
+              <input type="radio" name={id}   onChange={(event)=>handleChange(option)}/>
               {option}
               <ToastContainer />
             </label></div>
