@@ -26,7 +26,7 @@ align-content: center;
    font-weight: bold;
 }
 .icon{
-    margin-left: 100px;
+    margin-left: 70px;
 }
 @media only screen and (max-width: 700px) {
     .question {

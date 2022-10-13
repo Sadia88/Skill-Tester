@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Question from '../Question/Question';
+
 import './Questions.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,25 +12,25 @@ const Questions = ({questions}) => {
 
     
 const {options,id,question,correctAnswer}=questions
-const [count,setCount]=useState(0)
+
 const notifyCorrect = () => toast("Wow! Correct Answer");
 const notifyIncorrect = () => toast("Alas! Wrong Answer");
 // console.log(options)
 const handleChange =(event) => {
-    
+  
 if(event===correctAnswer){
 notifyCorrect() 
-setCount(count+1)  
+  
     
 }
 else{
     notifyIncorrect()
-    setCount(count)
+   
     
     
 }
   
- console.log(count)
+ 
 };
 
 const [isActive, setIsActive] = useState(false);
@@ -41,11 +41,11 @@ const [isActive, setIsActive] = useState(false);
   }
     return (
         <div>
-           <h1>Total correct answer is {count}</h1>
+           
             <div className='question'>
             
             <div>
-            <h4>{question.replace(/([^>]+)>/,'')}</h4>
+            <h4>{question.replace(/(<([^>]+)>)/ig, '')}</h4>
           
 
           <p>{options.map(option=>

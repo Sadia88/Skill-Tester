@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Question from '../Question/Question';
+
 import Questions from '../Questions/Questions';
 
 
