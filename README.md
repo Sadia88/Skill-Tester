@@ -17,3 +17,8 @@ The four exam categories available on this website are:
 **
 Additionally, 
 It includes three pages: a 'Home page', a 'Statistic' page showing the total number of questions graphically, and a page about a Blog site where frequently asked questions regarding react were addressed.##
+
+
+
+
+##Lve site ## https://quiet-gnome-9619b6.netlify.app/
