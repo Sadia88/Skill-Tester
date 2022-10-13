@@ -27,7 +27,17 @@ function App() {
         },
         {
           path: '/statistics',
+          loader: async() => {
+            const topicsData= await fetch('https://openapi.programming-hero.com/api/quiz')  
+            const topics= await topicsData.json()
+            return topics
+           }  ,
           element: <Statistics></Statistics>
+        },
+        
+        {
+          path: '/home',
+          element: <Blog></Blog>
         },
         {
           path:'/blog',
