@@ -1,6 +1,9 @@
 ##In just 10 minutes, this Web development quiz can evaluate overall skills, including Git.
 The four exam categories available on this website are:
+
+
 **
+
 1.CSS 
 
 2.React
@@ -8,6 +11,8 @@ The four exam categories available on this website are:
 3.JavaScript
 
 4. Git
+
+
 
 **
 Additionally, 
