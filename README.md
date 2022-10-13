@@ -21,4 +21,4 @@ It includes three pages: a 'Home page', a 'Statistic' page showing the total num
 
 
 
-##Lve site ## https://quiet-gnome-9619b6.netlify.app/
+##Live site ## https://quiet-gnome-9619b6.netlify.app/
