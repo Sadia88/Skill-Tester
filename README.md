@@ -4,13 +4,13 @@ The four exam categories available on this website are:
 
 **
 
-1.CSS 
+*CSS - has total 8 questions
 
-2.React
+*React - has total 9 questions
 
-3.JavaScript
+*javaript- has total 8 questions
 
-4. Git
+*Git - has total 11 questions
 
 
 
